@@ -1,9 +1,12 @@
+const SLIDE_SHOW_DELAY = 3000;
+
 const slider = document.querySelector('.slider');
 const naigators = document.querySelectorAll('.navigator');
 const slides = document.querySelectorAll('.image-wrapper');
 const slidesLength = slides.length;
 
 let currentSlideIndex = 0;
+let slideshowTimerId;
 
 setActiveNavigator();
 
@@ -30,6 +33,19 @@ function setActiveNavigator() {
             naigators[i].classList.remove('active-navigator');
         }
     }
+}
+
+function toggleSlideShow() {
+    if (slideshowTimerId) {
+        clearInterval(slideshowTimerId);
+        slideshowTimerId = null;
+        return;
+    }
+
+    move(1);
+    slideshowTimerId = setInterval(() => {
+        move(1);
+    }, SLIDE_SHOW_DELAY);
 }
 
 function normalizeIndex() {

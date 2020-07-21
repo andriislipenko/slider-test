@@ -90,3 +90,14 @@ body {
     right: 21px;
     transform: rotate(180deg);
 }
+
+.slide-show-switch-container {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+}
+
+.slide-show-switch-container .slide-show-switch, label {
+    cursor: pointer;
+}
