@@ -7,33 +7,7 @@
         <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
     </head>
     <body>
-        <header class="slider-container">
-            <div class="slider">
-                <div class="images-container">
-                    <div class="image-wrapper"><img src="images/slider1.png"/></div>
-                    <div class="image-wrapper"><img src="images/slider2.png"/></div>
-                    <div class="image-wrapper"><img src="images/slider3.png"/></div>
-                </div>
-            </div>
-            <button class="slider-next" onclick="nextSlide()"></button>
-            <button class="slider-prev" onclick="prevSlide()"></button>
-            <div class="navigators-container">
-                <div class="navigator">                    
-                </div><div class="navigator">
-                </div><div class="navigator">
-                </div>
-            </div>
-            <div class="slider-toning"></div>
-            <div class="slide-show-switch-container">
-                <input 
-                    type="checkbox"
-                    class="slide-show-switch"
-                    name="slide-show-switch" 
-                    id="slide-show-switch"
-                    oninput="toggleSlideShow(this.checked)"
-                />
-                <label for="slide-show-switch">Slide show</label>
-            </div>
+        <header class="header-container">
             <nav class="menu-container">
                 <ul class="menu">
                     <li class="menu-item menu-logo">
@@ -72,6 +46,45 @@
                     </li>
                 </ul>
             </nav>
+            <div class="slider">
+                <div class="images-container">
+                    <div class="image-wrapper"><img src="images/slider1.png"/></div>
+                    <div class="image-wrapper"><img src="images/slider2.png"/></div>
+                    <div class="image-wrapper"><img src="images/slider3.png"/></div>
+                </div>
+            </div>
+            <button class="slider-next" onclick="nextSlide()"></button>
+            <button class="slider-prev" onclick="prevSlide()"></button>
+            <div class="navigators-container">
+                <div class="navigator">                    
+                </div><div class="navigator">
+                </div><div class="navigator">
+                </div>
+            </div>
+            <div class="slider-toning"></div>
+            <div class="slide-show-switch-container">
+                <input 
+                    type="checkbox"
+                    class="slide-show-switch"
+                    name="slide-show-switch" 
+                    id="slide-show-switch"
+                    oninput="toggleSlideShow(this.checked)"
+                />
+                <label for="slide-show-switch">Slide show</label>
+            </div>
+            <div class="header">
+                <img class="header-image" src="images/logo_white.png" alt="front-end science logo"/>
+                <h1 class="header-text"><b>Frontend-разработчики</b> должны быть в теме всего</h1>
+                <div class="header-buttons-container">
+                    <div class="header-button-container">
+                        <a class="header-button header-button-left" href="#">да, должны</a>
+                        <div class="header-curtain-left"></div>
+                    </div><div class="header-button-container">
+                        <a class="header-button header-button-right" href="#">конечно, должны</a>
+                        <div class="header-curtain-right"></div>
+                    </div>
+                </div>
+            </div>
         </header>
         <script src='scripts/slider.js'></script>
     </body>

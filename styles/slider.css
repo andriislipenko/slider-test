@@ -1,18 +1,10 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.slider-container {
-    position: relative;
-    height: 960px;
-    width: 100%;
-}
-
 .slider {
     height: 100%;
     overflow: hidden;
     scroll-behavior: smooth;
+    position: absolute;
+    width: inherit;
+    z-index: -1;
 }
 
 .navigators-container {
@@ -52,6 +44,7 @@ body {
     height: 100%;
     background-color: #000000;
     opacity: 0.502;
+    z-index: -1;
 }
 
 .images-container {

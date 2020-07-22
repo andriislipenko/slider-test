@@ -5,6 +5,7 @@
     width: 100%;
     border-bottom: 1px solid #ffffff33;
     background-color: #00000033;
+    z-index: 999;
 }
 
 .menu-container .menu {
@@ -21,6 +22,7 @@
     height: 87px;
     line-height: 87px;
     font-size: 12px;
+    font-weight: 100;
 }
 
 .menu-item a {
