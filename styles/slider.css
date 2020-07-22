@@ -67,6 +67,10 @@ body {
     background-color: #ececec;
 }
 
+.image-wrapper img {
+    min-width: 100%;
+}
+
 .slider-prev, .slider-next {
     background: none;
     outline: none;

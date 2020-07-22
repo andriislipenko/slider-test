@@ -3,6 +3,7 @@ const SLIDE_SHOW_DELAY = 3000;
 const slider = document.querySelector('.slider');
 const naigators = document.querySelectorAll('.navigator');
 const slides = document.querySelectorAll('.image-wrapper');
+
 const slidesLength = slides.length;
 
 let currentSlideIndex = 0;
@@ -35,8 +36,8 @@ function setActiveNavigator() {
     }
 }
 
-function toggleSlideShow() {
-    if (slideshowTimerId) {
+function toggleSlideShow(checked) {
+    if (!checked) {
         clearInterval(slideshowTimerId);
         slideshowTimerId = null;
         return;
