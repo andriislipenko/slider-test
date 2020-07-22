@@ -36,11 +36,11 @@
 
 .menu-item.phone-numbers .phone-number{
     color: #53d0fb;
-    padding: 0 9px;
+    padding: 0 5px;
 }
 
 .menu-item.language-selector {
-    padding: 0 38px;
+    padding: 0 25px;
 }
 
 .menu-item.language-selector a {
@@ -48,12 +48,12 @@
 }
 
 .menu-item.language-selector .language-spliter {
-    padding: 0 16px;
+    padding: 0 8px;
     color: #53d0fb;
 }
 
 .menu-item.regular-item {
-    padding: 0 45px;
+    padding: 0 20px;
 }
 
 .menu .menu-logo {
