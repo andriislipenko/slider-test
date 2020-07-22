@@ -1,0 +1,7 @@
+@import 'font-faces.css';
+@import 'slider.css';
+@import 'menu.css';
+
+body {
+    font-family: MyriadProRegular, sans-serif;
+}

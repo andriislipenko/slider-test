@@ -1,0 +1,79 @@
+.menu-container {
+    position: absolute;
+    top: 0;
+    height: 87px;
+    width: 100%;
+    border-bottom: 1px solid #ffffff33;
+    background-color: #00000033;
+}
+
+.menu-container .menu {
+    list-style: none;
+    height: 100%;
+    margin: 0;
+    padding-left: 60px;
+}
+
+.menu .menu-item {
+    position: relative;
+    display: block;
+    float: right;
+    height: 87px;
+    line-height: 87px;
+    font-size: 12px;
+}
+
+.menu-item a {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-item.phone-numbers .phone-number{
+    color: #53d0fb;
+    padding: 0 9px;
+}
+
+.menu-item.language-selector {
+    padding: 0 38px;
+}
+
+.menu-item.language-selector a {
+    color: #53d0fb;
+}
+
+.menu-item.language-selector .language-spliter {
+    padding: 0 16px;
+    color: #53d0fb;
+}
+
+.menu-item.regular-item {
+    padding: 0 45px;
+}
+
+.menu .menu-logo {
+    float: left;
+}
+
+.menu-logo img{
+    height: 70px;
+    vertical-align: middle;
+}
+
+.menu-item:hover .border-half {
+    display: block;
+}
+
+.border-half {
+    display: none;
+    position: absolute;
+    width: 69px;
+    height: 1px;
+    background-color: #f7b940;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
