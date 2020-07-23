@@ -1,0 +1,48 @@
+.stack-container {
+    box-sizing: border-box;
+    height: 455px;
+    background-color: #f4f4f4;
+    padding: 70px 0 50px 0;
+}
+
+.skill-icons-container, .skill-description-container {
+    display: flex;
+}
+
+.skill-icon {
+    height: 215px;
+    display: block;
+    width: 33.3%
+}
+
+.skill-description {
+    width: 33.3%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.skill-number {
+    font-size: 6.5em;
+    padding-right: 40px;
+}
+
+.skill-number, .skill-abbreviation-container {
+    display: inline-block;
+}
+
+.skill-abbreviation {
+    font-size: 1.8em;
+    margin: 25px 0 10px 0 !important;
+}
+
+.skill-name {
+    font-size: 1.1em;
+    width: 150px;
+}
+
+.skill-abbreviation, .skill-name {
+    margin: 0;
+    text-align: left;
+}

@@ -4,6 +4,7 @@
 @import 'slider.css';
 @import 'thoughts.css';
 @import 'shared.css';
+@import 'stack.css';
 
 body {
     font-family: MyriadProRegular, sans-serif;
@@ -13,4 +14,9 @@ body {
 
 b {
     font-family: MyriadProBold;
+}
+
+/* Should be removed after mobile version design implemented */
+header, section, footer {
+    min-width: 1200px;
 }
