@@ -5,6 +5,7 @@
 @import 'thoughts.css';
 @import 'shared.css';
 @import 'stack.css';
+@import 'main-text.css';
 
 body {
     font-family: MyriadProRegular, sans-serif;

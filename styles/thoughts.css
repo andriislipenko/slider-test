@@ -46,5 +46,7 @@
     text-transform: uppercase;
     width: 100%;
     text-align: center;
-    padding: 40px;
+    padding: 50px;
+    box-sizing: border-box;
+    margin: 100px 0;
 }

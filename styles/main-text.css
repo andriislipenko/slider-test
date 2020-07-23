@@ -1,0 +1,149 @@
+.main-text-wrapper {
+    width: 70%;
+    margin: 135px auto 220px;
+    text-align: center;
+}
+
+.main-text-header {
+    font-size: 2.2em;
+    text-transform: uppercase;
+}
+
+.main-text-part {
+    height: 520px;
+    display: flex;
+}
+
+.main-text-part-last {
+    padding-top: 115px;
+}
+
+.main-text, .main-image {
+    display: inline-block;
+    height: inherit;
+}
+
+.main-text {
+    width: 30%;
+    position: relative;
+}
+
+.main-text-left {
+    text-align: left;
+}
+
+.main-text-right {
+    text-align: right;
+}
+
+.main-text-title {
+    margin: 0;
+    top: 50px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 1;
+    width: 115%;
+    font-size: 2.2em;
+    text-transform: uppercase;
+}
+
+.main-text-title-left {
+    left: 0;
+    padding: 60px 25px 60px 40px;
+    background-color: #ffffff56;
+}
+
+.main-text-title-right {
+    right: 0;
+    padding: 60px 40px 60px 25px;
+}
+
+.main-text-right-shadow {
+    display: inline-block;
+    position: absolute;
+    width: calc(13% - 5px);
+    height: calc(100% - 10px);
+    top: 5px;
+    left: 5px;
+    background-color: #1e1e1e56;
+}
+
+.main-text-actual {
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+.main-text-actual-left {
+    padding: 260px 10px 0 40px;
+}
+
+.main-text-actual-right {
+    padding: 260px 40px 0 10px;
+}
+
+.main-image {
+    width: 70%;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-text-button {
+    position: relative;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 230px;
+    background-color: #53d0fb;
+    transition: color 0.3s;
+    overflow: hidden;
+}
+
+.main-text-button-left {
+    margin: 90px 0 0 40px;
+}
+
+.main-text-button-right {
+    margin: 90px 40px 0 0;
+}
+
+.main-text-button::before, .main-text-button::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    left: 0;
+    transition: top 0.3s;
+    z-index: -1;
+}
+
+.main-text-button:hover {
+    background-color: #ffffff00;
+    color: white;
+}
+
+.main-text-button:hover::before {
+    top: 0;
+}
+
+.main-text-button:hover::after {
+    top: 0;
+    transition-delay: 0.175s;
+}
+
+.main-text-button::before {
+    background-color: #00000088;
+}
+
+.main-text-button::after {
+    background-color: #000000;
+}
+
+.first-main-image {
+    background-image: url('../images/main-bakground-1.png');
+}
+
+.second-main-image {
+    background-image: url('../images/main-bakground-2.png');
+}
