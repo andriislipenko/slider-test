@@ -6,6 +6,7 @@
 @import 'shared.css';
 @import 'stack.css';
 @import 'main-text.css';
+@import 'feedback.css';
 
 body {
     font-family: MyriadProRegular, sans-serif;
