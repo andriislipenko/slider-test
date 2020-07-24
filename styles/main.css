@@ -7,6 +7,7 @@
 @import 'stack.css';
 @import 'main-text.css';
 @import 'feedback.css';
+@import 'footer.css';
 
 body {
     font-family: MyriadProRegular, sans-serif;
