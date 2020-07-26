@@ -1,6 +1,12 @@
+.main-text-container {
+    background-color: white;
+    padding-top: 135px;
+    padding-bottom: 220px;
+}
+
 .main-text-wrapper {
     width: 70%;
-    margin: 135px auto 220px;
+    margin: auto;
     text-align: center;
 }
 

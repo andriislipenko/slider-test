@@ -98,3 +98,27 @@
 .slide-show-switch-container .slide-show-switch, label {
     cursor: pointer;
 }
+
+.slide-show-switch {
+    display: none;
+}
+
+.slide-show-switch-label {
+    position: relative;
+}
+
+.slide-show-switch-label::before {
+    display: inline;
+    position: absolute;
+    content: '✓';
+    right: 100%;
+    bottom: 0;
+    padding: 0 5px;
+    vertical-align: middle;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+
+.slide-show-switch-checked::before {
+    color: limegreen;
+}

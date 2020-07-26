@@ -44,6 +44,11 @@
     overflow: hidden;
 }
 
+.button-regular > * {
+    position: relative;
+    z-index: 10;
+}
+
 .button-regular::before, .button-regular::after {
     content: '';
     position: absolute;
@@ -52,7 +57,7 @@
     top: -100%;
     left: 0;
     transition: top 0.3s;
-    z-index: -1;
+    z-index: 1;
 }
 
 .button-regular:hover {
@@ -75,4 +80,41 @@
 
 .button-regular::after {
     background-color: #000000;
+}
+
+.share-container {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    mix-blend-mode: difference;
+}
+
+.share-text {
+    transform: rotate(90deg);
+    font-size: 0.7em;
+    margin-bottom: 15px;
+    color: white;
+    /* color: #c3c2c7; */
+}
+
+.share-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: white;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-color: #c3c2c7; */
+}
+
+.share-icon-twitter {
+    background-image: url('../images/twitter-white.svg');
+    background-size: 100% 16px;
+    margin-bottom: 12px;
+}
+
+.share-icon-facebook {
+    background-image: url('../images/facebook-white.svg');
+    background-size: 100% 19px;
 }

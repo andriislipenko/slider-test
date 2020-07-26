@@ -37,9 +37,12 @@ function setActiveNavigator() {
 }
 
 function toggleSlideShow(checked) {
+    const checkboxLabel = document.querySelector('.slide-show-switch-label');
+
     if (!checked) {
         clearInterval(slideshowTimerId);
         slideshowTimerId = null;
+        checkboxLabel.classList.remove('slide-show-switch-checked');
         return;
     }
 
@@ -47,6 +50,7 @@ function toggleSlideShow(checked) {
     slideshowTimerId = setInterval(() => {
         move(1);
     }, SLIDE_SHOW_DELAY);
+    checkboxLabel.classList.add('slide-show-switch-checked');
 }
 
 function normalizeIndex() {
