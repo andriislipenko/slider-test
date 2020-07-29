@@ -1,0 +1,25 @@
+@import './styles/feedback.css';
+@import './styles/font-faces.css';
+@import './styles/footer.css';
+@import './styles/header.css';
+@import './styles/main-text.css';
+@import './styles/menu.css';
+@import './styles/shared.css';
+@import './styles/slider.css';
+@import './styles/stack.css';
+@import './styles/thoughts.css';
+
+body {
+    font-family: MyriadProRegular, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+b {
+    font-family: MyriadProBold;
+}
+
+/* Should be removed after mobile version design implemented */
+header, section, footer {
+    min-width: 1200px;
+}
