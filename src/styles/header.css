@@ -1,0 +1,82 @@
+.header-container {
+    position: relative;
+    height: 960px;
+    width: 100%;
+}
+
+.header {
+    width: 585px;
+    margin: 0 auto;
+    padding-top: 230px;
+}
+
+.header-image {
+    height: 273px;
+}
+
+.header-text {
+    font-size: 2.8em;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 100;
+    margin: 64px auto 55px;
+    text-align: center;
+}
+
+.header-buttons-container {
+    margin: 0 auto;
+    width: 454px;
+}
+
+.header-button-container {
+    background-color: #02020240;
+    border: 1px solid #424a57;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-button {
+    display: inline-block;
+    width: 225px;
+    height: 50px;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    transition: color 0.5s ease-out;
+    position: relative;
+    z-index: 100;
+}
+
+.header-curtain-right, .header-curtain-left {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.header-curtain-right {
+    right: 100%;
+    transition: right ease-out .5s;
+}
+
+.header-curtain-left {
+    left: 100%;
+    transition: left ease-out .5s;
+}
+
+.header-button:hover {
+    color: black;
+}
+
+.header-button-left:hover + .header-curtain-left {
+    left: 0;
+}
+
+.header-button-right:hover + .header-curtain-right {
+    right: 0;
+}
